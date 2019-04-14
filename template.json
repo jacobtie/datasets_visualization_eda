@@ -3,7 +3,7 @@
     ,"url" : "url.domain"
     ,"publisher" : "publisher"
     ,"lastUpdateTime" : "time"
-    ,"subject" : "subject"
+    ,"subject" : ["subject1", "subject2"]
     ,"description" : "Description of multiple words"
     ,"keywords" : ["keyword1", "keyword2", "keyword3"]
     ,"filesize": 100
