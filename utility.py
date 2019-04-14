@@ -1,4 +1,4 @@
-def reduceByKeyword(arr):
+def reduceByKey(arr):
     res = []
     for val in arr:
         found = False

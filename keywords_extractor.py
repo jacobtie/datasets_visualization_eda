@@ -1,7 +1,7 @@
 import os
 import json
 import re
-from utility import reduceByKeyword
+from utility import reduceByKey
 
 if __name__ == '__main__':
     keywords = []
@@ -42,5 +42,5 @@ if __name__ == '__main__':
             continue
     print(f'\n{len(json_files)-errors} files were read correctly. {errors} files were bad')
     
-    reducedKeywords = reduceByKeyword(keywords)
+    reducedKeywords = reduceByKey(keywords)
     print(sorted(reducedKeywords, key=lambda x: x[1]))

@@ -1,6 +1,6 @@
 import os
 import json
-from utility import reduceByKeyword
+from utility import reduceByKey
 
 if __name__ == '__main__':
     file_path = 'MetaData_Json_DataVerse/MetaData_Json'
@@ -27,5 +27,5 @@ if __name__ == '__main__':
         
     print(f'\n{len(json_files)-errors} files were read correctly. {errors} files were bad')
     
-    reducedKeywords = reduceByKeyword(subjects)
-    print(sorted(reducedKeywords, key=lambda x: x[1]))
+    reducedSubjects = reduceByKey(subjects)
+    print(sorted(reducedSubjects, key=lambda x: x[1]))
