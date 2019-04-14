@@ -23,6 +23,10 @@ if __name__ == '__main__':
                 data_dict['subject'] = list(filter(lambda f: f['typeName'] == 'subject', data_fields))[0]['value']
                 data_dict['description'] = list(filter(lambda f: f['typeName'] == 'dsDescription', data_fields))[0]['value'][0]['dsDescriptionValue']['value']
                 # Filesize
+                fileSize = 0
+                for data_file in data['data']['latestVersion']['files']:
+                    fileSize += data_file['dataFile']['filesize']
+                data_dict['filesize'] = fileSize
                 # Keywords
                 datasets.append(data_dict)
                 break
